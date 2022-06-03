@@ -19,8 +19,8 @@ export default function App() {
   const guest = useSelector((state) => state.guest);
   const theme = useSelector((state) => state.theme);
 
-  axios.defaults.baseURL = "http://localhost:3000/";
-  // axios.defaults.baseURL = "https://api.jsonbin.io/b/6297dcc0402a5b3802190021";
+  // axios.defaults.baseURL = "http://localhost:3000/";
+  axios.defaults.baseURL = "https://gateway-react-test.herokuapp.com/";
   const dispatch = useDispatch();
 
   const fetchData = () => {
